@@ -27,6 +27,21 @@ public class Payroll
         }
          /**The method for calculating salary including bonus.Bonus is 10% of salary 
       */ 
+   
+      public void calculation()
+      {
+          double pay;
+          if(Salary <= 3000)
+          {
+              bonus = (10*Salary)/100;
+              pay = Salary + bonus;
+              System.out.println(pay);
+          }
+          else
+          {
+              System.out.println("Your salary was " + Salary +" sorry for you no bonus.");
+          }
+      }
         
         
      /**The getter for the Salary

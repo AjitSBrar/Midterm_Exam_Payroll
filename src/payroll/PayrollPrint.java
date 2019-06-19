@@ -21,10 +21,15 @@ Payroll ac[]=new Payroll[50];
 Scanner sc=new Scanner(System.in);
 System.out.println("Please enter the employee name:");
 //add code
-System.out.println("Please enter the salary: salary <=3000");
-       
-System.out.println("The final Salary including bonus is: ");         
 
+   String givenUser = sc.nextLine();
+System.out.println("Please enter the salary: salary <=3000");
+   double Sal = sc.nextDouble();
+   
+   Payroll obj = new Payroll(Sal,givenUser);
+   //ac[0]=obj;
+System.out.println("The final Salary including bonus is: ");         
+  obj.calculation();
 }
 
 }
